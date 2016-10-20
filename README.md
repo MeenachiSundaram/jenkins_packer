@@ -1,5 +1,5 @@
 # jenkins_packer
-packer to build vm.box using Jenkins CI
+Packer to build vm.box using Jenkins CI
 
 ## How to run
 1. Edit **centos72.json** file according to you environment.   
