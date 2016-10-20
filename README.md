@@ -15,3 +15,7 @@ Packer to build vm.box using Jenkins CI
   ```
   export PACKER_LOG_PATH=./log &&  export  PACKER_LOG=1 && packer build -var-file=centos72.json -only=virtualbox-iso centos.json
   ```
+## Apllication Installed in jenkins host
+
+ 	- git
+	- hashalot
