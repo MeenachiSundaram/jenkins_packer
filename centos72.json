@@ -8,5 +8,6 @@
   "iso_name": "CentOS-7-x86_64-Minimal-1511.iso",
   "iso_url": "../CentOS-7-x86_64-Minimal-1511.iso",
   "kickstart": "ks7.cfg",
-  "memory": "512"
+  "memory": "512",
+  "headless": "true"
 }
