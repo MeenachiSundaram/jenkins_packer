@@ -17,15 +17,6 @@ echo  "Install update & other packages"
 cd /opt/local_files/updates
 rpm -Uvh *.rpm
 
-echo  "Install Docker_dependency packages"
-# Install Docker_dependency packages
-cd /opt/local_files/docker_dependency
-rpm -Uvh *.rpm
-
-echo  "Install Docker package"
-# Install Docker package
-cd /opt/local_files/docker
-rpm -Uvh *.rpm
 
 echo "Copying 'docker-compose' 'docker-machine' & 'kubectl' and adding to PATH"
 #Copying 'docker-compose' 'docker-machine' & 'kubectl'
