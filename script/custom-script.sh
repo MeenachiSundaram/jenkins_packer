@@ -12,8 +12,8 @@ echo  "Copying local files"
 cd /opt
 tar -xzf /tmp/local_files.tar.gz
 
-echo  "Install update packages"
-# Install update packages
+echo  "Install update & other packages"
+# Install update & other packages
 cd /opt/local_files/updates
 rpm -Uvh *.rpm
 
@@ -25,11 +25,6 @@ rpm -Uvh *.rpm
 echo  "Install Docker package"
 # Install Docker package
 cd /opt/local_files/docker
-rpm -Uvh *.rpm
-
-echo  "Install other packages"
-# Install other packages
-cd /opt/local_files/packages
 rpm -Uvh *.rpm
 
 echo "Copying 'docker-compose' 'docker-machine' & 'kubectl' and adding to PATH"

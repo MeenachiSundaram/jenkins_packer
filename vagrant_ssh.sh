@@ -6,7 +6,7 @@ cd /tmp/ && rpm -ivh epel-release-7-8.noarch.rpm
 
 sudo yum install --downloadonly --downloaddir=/vagrant/local_files/updates update
 
-sudo yum install --downloadonly --downloaddir=/vagrant/updates tree screen git wget nano emacs vim
+sudo yum install --downloadonly --downloaddir=/vagrant/local_files/updates tree screen git wget nano emacs vim
 
 sudo tee /etc/yum.repos.d/docker.repo <<-'EOF'
 [dockerrepo]
