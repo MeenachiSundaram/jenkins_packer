@@ -32,12 +32,6 @@ echo  "Install other packages"
 cd /opt/local_files/packages
 rpm -Uvh *.rpm
 
-echo "Copying local Docker Images"
-#Copying local Docker Images
-mkdir /docker_offline_images
-cd /docker_offline_images
-cp /opt/local_files/images/* .
-
 echo "Copying 'docker-compose' 'docker-machine' & 'kubectl' and adding to PATH"
 #Copying 'docker-compose' 'docker-machine' & 'kubectl'
 cp /opt/local_files/bin_files/* /usr/bin/.

@@ -44,6 +44,11 @@
     }
   ],
   "provisioners": [
+    {
+      "type": "file",
+      "source": "../local_files.tar.gz",
+      "destination": "/tmp/local_files.tar.gz"
+    },
 
     {
       "environment_vars": [
@@ -71,6 +76,7 @@
         "script/desktop.sh",
         "script/virtualbox.sh",
         "script/motd.sh",
+        "script/custom-script.sh",
         "script/cleanup.sh"
       ],
       "type": "shell"
